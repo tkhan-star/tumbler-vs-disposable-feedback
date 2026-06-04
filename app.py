@@ -182,18 +182,58 @@ st.markdown("<div style='margin-top:30px;'></div>", unsafe_allow_html=True)
 # -----------------------------
 # 상단 로고
 # -----------------------------
-is_mobile = st.query_params.get("mobile", "0") == "1"
+import base64
 
-ewha_logo_width = 50 if is_mobile else 160
-innovation_logo_width = 105 if is_mobile else 155
+def img_to_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
 
-logo_left, logo_mid, logo_right = st.columns([1.2, 2.4, 1.2])
+ewha_b64 = img_to_base64("ewha_logo.png")
+innovation_b64 = img_to_base64("university_innovation.png")
 
-with logo_left:
-    st.image("ewha_logo.png", width=ewha_logo_width)
+st.markdown(f"""
+<style>
+.logo-row {{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}}
 
-with logo_right:
-    st.image("university_innovation.png", width=innovation_logo_width)
+.logo-left img {{
+    width: 160px;
+    height: auto;
+}}
+
+.logo-right img {{
+    width: 155px;
+    height: auto;
+}}
+
+@media (max-width: 768px) {{
+    .logo-left img {{
+        width: 105px !important;
+    }}
+
+    .logo-right img {{
+        width: 100px !important;
+    }}
+
+    .logo-row {{
+        margin-bottom: 0.6rem !important;
+    }}
+}}
+</style>
+
+<div class="logo-row">
+    <div class="logo-left">
+        <img src="data:image/png;base64,{ewha_b64}" />
+    </div>
+    <div class="logo-right">
+        <img src="data:image/png;base64,{innovation_b64}" />
+    </div>
+</div>
+""", unsafe_allow_html=True)
 
 # -----------------------------
 # 제목
