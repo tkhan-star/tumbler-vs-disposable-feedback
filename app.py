@@ -105,6 +105,61 @@ div.stButton > button:hover {{
     color: white;
     opacity: 0.92;
 }}
+
+@media (max-width: 768px) {{
+    .block-container {{
+        padding-top: 0.8rem !important;
+        padding-bottom: 1.2rem !important;
+    }}
+
+    h1 {{
+        font-size: 2.1rem !important;
+        line-height: 1.3 !important;
+        margin-top: 0.2rem !important;
+        margin-bottom: 0.6rem !important;
+    }}
+
+    h3 {{
+        font-size: 1.55rem !important;
+        line-height: 1.4 !important;
+    }}
+
+    p, label, .stMarkdown, .stText {{
+        font-size: 0.98rem !important;
+    }}
+
+    .result-label {{
+        font-size: 1.05rem !important;
+    }}
+
+    .result-number {{
+        font-size: 2.5rem !important;
+    }}
+
+    .result-footer {{
+        font-size: 1.05rem !important;
+    }}
+
+    .info-card {{
+        min-height: 96px !important;
+        padding: 14px 14px !important;
+    }}
+
+    .info-title {{
+        font-size: 0.88rem !important;
+    }}
+
+    .info-value {{
+        font-size: 1rem !important;
+        min-height: 2.6em !important;
+    }}
+
+    div.stButton > button {{
+        width: 100% !important;
+        font-size: 1rem !important;
+        padding: 0.72em 1em !important;
+    }}
+}}
 </style>
 """, unsafe_allow_html=True)
 
