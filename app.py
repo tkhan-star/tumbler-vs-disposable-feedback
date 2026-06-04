@@ -182,13 +182,18 @@ st.markdown("<div style='margin-top:30px;'></div>", unsafe_allow_html=True)
 # -----------------------------
 # 상단 로고
 # -----------------------------
+is_mobile = st.query_params.get("mobile", "0") == "1"
+
+ewha_logo_width = 110 if is_mobile else 160
+innovation_logo_width = 105 if is_mobile else 155
+
 logo_left, logo_mid, logo_right = st.columns([1.2, 2.4, 1.2])
 
 with logo_left:
-    st.image("ewha_logo.png", width=160)
+    st.image("ewha_logo.png", width=ewha_logo_width)
 
 with logo_right:
-    st.image("university_innovation.png", width=155)
+    st.image("university_innovation.png", width=innovation_logo_width)
 
 # -----------------------------
 # 제목
