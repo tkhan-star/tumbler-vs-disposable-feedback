@@ -184,7 +184,7 @@ st.markdown("<div style='margin-top:30px;'></div>", unsafe_allow_html=True)
 # -----------------------------
 is_mobile = st.query_params.get("mobile", "0") == "1"
 
-ewha_logo_width = 110 if is_mobile else 160
+ewha_logo_width = 50 if is_mobile else 160
 innovation_logo_width = 105 if is_mobile else 155
 
 logo_left, logo_mid, logo_right = st.columns([1.2, 2.4, 1.2])
