@@ -108,56 +108,70 @@ div.stButton > button:hover {{
 
 @media (max-width: 768px) {{
     .block-container {{
-        padding-top: 0.8rem !important;
-        padding-bottom: 1.2rem !important;
+        padding-top: 0.5rem !important;
+        padding-bottom: 1rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
     }}
 
     h1 {{
-        font-size: 2.1rem !important;
-        line-height: 1.3 !important;
-        margin-top: 0.2rem !important;
-        margin-bottom: 0.6rem !important;
+        font-size: 1.55rem !important;
+        line-height: 1.22 !important;
+        margin-top: 0rem !important;
+        margin-bottom: 0.45rem !important;
+        letter-spacing: -0.02em !important;
+        word-break: keep-all !important;
     }}
 
     h3 {{
-        font-size: 1.55rem !important;
-        line-height: 1.4 !important;
+        font-size: 1.15rem !important;
+        line-height: 1.32 !important;
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.35rem !important;
+        word-break: keep-all !important;
     }}
 
     p, label, .stMarkdown, .stText {{
-        font-size: 0.98rem !important;
+        font-size: 0.92rem !important;
+        line-height: 1.5 !important;
+    }}
+
+    .result-card {{
+        padding: 20px 14px !important;
     }}
 
     .result-label {{
-        font-size: 1.05rem !important;
+        font-size: 0.95rem !important;
     }}
 
     .result-number {{
-        font-size: 2.5rem !important;
+        font-size: 2.1rem !important;
     }}
 
     .result-footer {{
-        font-size: 1.05rem !important;
+        font-size: 0.95rem !important;
     }}
 
     .info-card {{
-        min-height: 96px !important;
-        padding: 14px 14px !important;
+        min-height: 86px !important;
+        padding: 12px 12px !important;
     }}
 
     .info-title {{
-        font-size: 0.88rem !important;
+        font-size: 0.8rem !important;
+        margin-bottom: 4px !important;
     }}
 
     .info-value {{
-        font-size: 1rem !important;
-        min-height: 2.6em !important;
+        font-size: 0.95rem !important;
+        min-height: 2.2em !important;
+        line-height: 1.35 !important;
     }}
 
     div.stButton > button {{
         width: 100% !important;
-        font-size: 1rem !important;
-        padding: 0.72em 1em !important;
+        font-size: 0.95rem !important;
+        padding: 0.7em 0.9em !important;
     }}
 }}
 </style>
