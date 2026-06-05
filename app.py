@@ -306,22 +306,22 @@ if show_result:
         if water_option == "물을 받아서 세척":
             wash_ef = 0.0055404350
         elif water_option == "보통 수준으로 세척":
-            wash_ef = 0.0061804350
-        elif water_option == "물을 틀어 놓고 세척":
             wash_ef = 0.0068204350
+        elif water_option == "물을 틀어 놓고 세척":
+            wash_ef = 0.0081004350 
         display_wash_option = f"{wash_option}<br>{water_option}"
 
     elif wash_option == "따뜻한 물로 직접 세척":
         if water_option == "물을 받아서 세척":
-            wash_ef = 0.0214640307
+            wash_ef = 0.0137368555 
         elif water_option == "보통 수준으로 세척":
-            wash_ef = 0.0380276263
+            wash_ef = 0.0314096966 
         elif water_option == "물을 틀어 놓고 세척":
-            wash_ef = 0.0545912220
+            wash_ef = 0.0490825378 
         display_wash_option = f"{wash_option}<br>{water_option}"
 
     elif wash_option == "발포 세정제 사용":
-        wash_ef = 0.0251393569
+        wash_ef = 0.0174121818 
 
     elif wash_option == "식기세척기 사용":
         wash_ef = 0.0423446175
