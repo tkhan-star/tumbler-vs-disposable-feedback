@@ -297,18 +297,6 @@ st.markdown("<div style='margin-top:25px;'></div>", unsafe_allow_html=True)
 # -----------------------------
 show_result = st.button("결과 보기", type="primary")
 
-st.markdown("""
-<div id="result-section"></div>
-<script>
-setTimeout(function() {
-    const el = window.parent.document.querySelector('#result-section');
-    if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-}, 200);
-</script>
-""", unsafe_allow_html=True)
-
 if show_result:
     wash_ef = None
     display_cup_option = cup_option
@@ -376,6 +364,18 @@ if show_result:
         </div>
         """, unsafe_allow_html=True)
   
+    st.markdown("""
+    <div id="result-section"></div>
+    <script>
+    setTimeout(function() {
+        const el = window.parent.document.querySelector('#result-section');
+        if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }, 200);
+    </script>
+    """, unsafe_allow_html=True)
+
     
     # -----------------------------
     # 결과 해석 문장
