@@ -363,19 +363,6 @@ if show_result:
             <div class="result-footer">입니다.</div>
         </div>
         """, unsafe_allow_html=True)
-  
-    st.markdown("""
-    <div id="result-section"></div>
-    <script>
-    setTimeout(function() {
-        const el = window.parent.document.querySelector('#result-section');
-        if (el) {
-            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    }, 200);
-    </script>
-    """, unsafe_allow_html=True)
-
     
     # -----------------------------
     # 결과 해석 문장
