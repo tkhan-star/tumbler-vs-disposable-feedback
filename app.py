@@ -173,6 +173,15 @@ div.stButton > button:hover {{
         font-size: 0.95rem !important;
         padding: 0.7em 0.9em !important;
     }}
+
+    .extra-result-note {{
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.5;
+    margin-top: 10px;
+    }}
+
+    
 }}
 </style>
 """, unsafe_allow_html=True)
@@ -222,6 +231,11 @@ st.markdown(f"""
     .logo-row {{
         margin-bottom: 0.6rem !important;
     }}
+
+    .extra-result-note {{
+    font-size: 0.92rem !important;
+    }}
+    
 }}
 </style>
 
