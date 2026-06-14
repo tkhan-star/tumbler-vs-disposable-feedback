@@ -173,14 +173,6 @@ div.stButton > button:hover {{
         font-size: 0.95rem !important;
         padding: 0.7em 0.9em !important;
     }}
-
-    .extra-result-note {{
-    font-size: 1rem;
-    color: #555555;
-    line-height: 1.5;
-    margin-top: 10px;
-    }}
-
     
 }}
 </style>
@@ -230,10 +222,6 @@ st.markdown(f"""
 
     .logo-row {{
         margin-bottom: 0.6rem !important;
-    }}
-
-    .extra-result-note {{
-    font-size: 0.92rem !important;
     }}
     
 }}
@@ -374,8 +362,7 @@ if show_result:
         <div class="result-card">
             <div class="result-label">최소 재사용 횟수는</div>
             <div class="result-number">{a_min}회</div>
-            <div class="result-footer">입니다.</div></div>
-            <div class="extra-result-note">텀블러 1개를 {a_min}회 이상 사용해야 일회용 컵보다 환경적으로 유리합니다.</div>
+            <div class="result-footer">입니다.</div>
         </div>
         """, unsafe_allow_html=True)
     
@@ -400,7 +387,7 @@ if show_result:
     st.markdown("### 계산 기준")
     st.markdown(
         """
-        - 본 결과는 **355 mL(톨 사이즈) 일회용 컵과 텀블러** 를 대상으로 계산하였습니다.  
+        - 본 결과는 **355 mL(톨 사이즈) 일회용 컵과 스테인리스 텀블러** 를 대상으로 계산하였습니다.  
         - 세척 방식에 따라 텀블러가 일회용 컵보다 환경적으로 유리해지는 시점이 달라질 수 있습니다.
         """
     )
