@@ -374,7 +374,7 @@ if show_result:
         <div class="result-card">
             <div class="result-label">최소 재사용 횟수는</div>
             <div class="result-number">{a_min}회</div>
-            <div class="result-footer">입니다.</div>
+            <div class="result-footer">입니다.</div></div>
             <div class="extra-result-note">텀블러 1개를 {a_min}회 이상 사용해야 일회용 컵보다 환경적으로 유리합니다.</div>
         </div>
         """, unsafe_allow_html=True)
