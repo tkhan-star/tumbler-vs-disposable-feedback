@@ -326,7 +326,7 @@ if show_result:
         wash_ef = 0.0174121818 
 
     elif wash_option == "식기세척기 사용":
-        wash_ef = 0.0423446175
+        wash_ef = 0.039356562
 
     elif wash_option == "텀블러 전용 세척기 사용":
         wash_ef = 0.1116584196
