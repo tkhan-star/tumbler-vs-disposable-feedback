@@ -256,18 +256,18 @@ st.subheader("1. 주로 사용하는 일회용 컵을 선택하세요.")
 cup_option = st.selectbox(
     "일회용 컵 종류 선택",
     [
-        "종이컵",
-        "플라스틱 컵",
-        "종이컵과 플라스틱 컵을 비슷하게 사용"
+        "종이컵을 주로 사용",
+        "종이컵과 플라스틱 컵 모두 사용",
+        "플라스틱 컵을 주로 사용"
     ]
 )
 
-if cup_option == "종이컵":
+if cup_option == "종이컵을 주로 사용":
     alpha = paper_cup_ef
-elif cup_option == "플라스틱 컵":
+elif cup_option == "플라스틱 컵을 주로 사용":
     alpha = plastic_cup_ef
 else:
-    # 종이컵과 플라스틱 컵을 비슷한 비율로 사용한다고 가정하여
+    # 종이컵과 플라스틱 컵을 모두 사용하는 경우
     # 두 일회용 컵의 1회 사용 배출량 평균을 적용
     alpha = (paper_cup_ef + plastic_cup_ef) / 2
 
