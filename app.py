@@ -255,13 +255,21 @@ st.subheader("1. 주로 사용하는 일회용 컵을 선택하세요.")
 
 cup_option = st.selectbox(
     "일회용 컵 종류 선택",
-    ["종이컵", "플라스틱 컵"]
+    [
+        "종이컵",
+        "플라스틱 컵",
+        "종이컵과 플라스틱 컵을 비슷하게 사용"
+    ]
 )
 
 if cup_option == "종이컵":
     alpha = paper_cup_ef
-else:
+elif cup_option == "플라스틱 컵":
     alpha = plastic_cup_ef
+else:
+    # 종이컵과 플라스틱 컵을 비슷한 비율로 사용한다고 가정하여
+    # 두 일회용 컵의 1회 사용 배출량 평균을 적용
+    alpha = (paper_cup_ef + plastic_cup_ef) / 2
 
 st.markdown("<div style='margin-top:18px;'></div>", unsafe_allow_html=True)
 
@@ -440,4 +448,3 @@ if show_result:
 
     st.markdown("### 의견 남기기")
     st.markdown("[의견 조사 참여하기](https://forms.gle/JSXqB2LFNfCukCJj7)")
-
