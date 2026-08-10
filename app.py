@@ -11,8 +11,8 @@ st.set_page_config(
 # -----------------------------
 MAIN_GREEN = "#00462A"
 
-paper_cup_ef = 0.062782789      # 종이컵
-plastic_cup_ef = 0.08644142     # 플라스틱 컵
+paper_cup_ef = 0.042762081      # 종이컵
+plastic_cup_ef = 0.077816      # 플라스틱 컵
 tumbler_prod_ef = 0.92342080     # 텀블러 생산
 
 # -----------------------------
